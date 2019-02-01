@@ -5,8 +5,109 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <ul class="left-navigation">
+          <li><a href="#info">Информация</a></li>
+          <li><a href="photo.html">Фото и Видео</a></li>
+        </ul>
+          <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
+          </a>
+        <ul class="right-navigation">
+          <li><a href="#map">Карта штата</a></li>
+          <li><a href="#hotels">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  </body>
+<main class="main-page">
+  <h1 class="visually-hidden"></h1>
+    <h2 class="visually-hidden"></h2>
+     <!-- не знаю что тут написать и нужны ли заголовки тут вообще -->
+  <section class="top-section">
+
+    <img src="sedonafull.jpg" alt="ФотоСедона">
+    <span>Седона - небольшой городок в Аризоне, заслуживающий большего!<span>
+    <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
+  </section>
+  <section class="sedona-features">
+  </section>
+  <section class="search-field">
+    <h2 class="visually-hidden">Поиск Отелей</h2>
+
+    <form class="hotels-search" action="index.html" method="get">
+      <fieldset class="search-field-top">
+      <span class="search-field-top-name">Поиск гостиницы в Седоне</span>
+    </fieldset>
+    <fieldset class="search-field-main-">
+      <table>
+        <tr>
+          <td colspan="2">
+          <label for="date-inn">Дата Заезда</label>
+          </td>
+          <td colspan="2">
+            <input type="date" id="date-inn" name="date" value="today">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+          <label for="date-out">Дата выезда</label>
+        </td>
+          <td colspan="2">
+            <input type="date" id="date-out"name="date" value="tomorrow">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="adults">Взрослые</label>
+          </td>
+          <td>
+            <input type="number" id="adults" name="adults" value="2">
+          </td>
+          <td>
+            <label for="children">Дети</label>
+          </td>
+          <td>
+            <input type="number" id="children" name="children" value="0">
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Найти">
+      <!-- <p>
+        <label for="">
+        <span class="search-field-main-span">Дата Заезда</span>
+        </label>
+        <input id="" type="text" name="" value="">
+      </p> хотела сначала так делать
+       -->
+      </fieldset>
+
+    </form>
+
+  </section>
+
+</main>
+
+  <footer class="main-footer">
+     <p class="footer-contacts">
+       <b>#VISITSEDONA</b>
+     </p>
+     <div class="footer-social">
+       <ul>
+         <li><a class="social-button" href="#">Twitter</a></li>
+         <li><a class="social-button" href="#">Facebook</a></li>
+         <li><a class="social-button" href="#">YouTube</a></li>
+       </ul>
+     </div>
+     <p class="footer-copyright">
+    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
+      <span>Website by</span>
+      <img src="img.jpg" alt="ЛогоАкадемия">
+    </a>
+     </p>
+
+  </footer>
+</body>
 </html>
