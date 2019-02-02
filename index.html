@@ -9,80 +9,65 @@
       <nav class="main-navigation">
 
         <ul class="left-navigation">
-          <li><a href="#info">Информация</a></li>
+          <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и Видео</a></li>
         </ul>
           <a class="main-header-logo">
           <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
           </a>
         <ul class="right-navigation">
-          <li><a href="#map">Карта штата</a></li>
-          <li><a href="#hotels">Гостиницы</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
 <main class="main-page">
-  <h1 class="visually-hidden"></h1>
-    <h2 class="visually-hidden"></h2>
-     <!-- не знаю что тут написать и нужны ли заголовки тут вообще -->
+  <h1 class="visually-hidden">Седона, штат Аризона</h1>
   <section class="top-section">
 
     <img src="sedonafull.jpg" alt="ФотоСедона">
+    <h2 class="visually-hidden">Седона лучше, чем Гранд Каньон</h2>
     <span>Седона - небольшой городок в Аризоне, заслуживающий большего!<span>
     <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
   </section>
   <section class="sedona-features">
   </section>
   <section class="search-field">
-    <h2 class="visually-hidden">Поиск Отелей</h2>
+    <h2 class="visually-hidden">Заинтересовались?</h2>
+  <p>
+    Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+    гостиниц в Седоне
+  </p>
 
     <form class="hotels-search" action="index.html" method="get">
-      <fieldset class="search-field-top">
       <span class="search-field-top-name">Поиск гостиницы в Седоне</span>
-    </fieldset>
-    <fieldset class="search-field-main-">
-      <table>
-        <tr>
-          <td colspan="2">
-          <label for="date-inn">Дата Заезда</label>
-          </td>
-          <td colspan="2">
-            <input type="date" id="date-inn" name="date" value="today">
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-          <label for="date-out">Дата выезда</label>
-        </td>
-          <td colspan="2">
-            <input type="date" id="date-out"name="date" value="tomorrow">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="adults">Взрослые</label>
-          </td>
-          <td>
-            <input type="number" id="adults" name="adults" value="2">
-          </td>
-          <td>
-            <label for="children">Дети</label>
-          </td>
-          <td>
-            <input type="number" id="children" name="children" value="0">
-          </td>
-        </tr>
-      </table>
-      <input type="submit" value="Найти">
-      <!-- <p>
-        <label for="">
+    <fieldset class="search-field-main">
+
+        <label for="date-in">
         <span class="search-field-main-span">Дата Заезда</span>
         </label>
-        <input id="" type="text" name="" value="">
-      </p> хотела сначала так делать
-       -->
+        <input id="date-in" type="text" name="date-in" value="today">
+
+        <label for="date-out">
+        <span class="search-field-main-span">Дата Заезда</span>
+        </label>
+        <input id="date-out" type="text" name="date-out" value="tomorrow">
+    <div class="half-whidth">
+      <label for="adults">
+      <span class="search-field-main-span">Взрослые</span>
+      </label>
+      <input id="date-in" type="text" name="adults" value="2">
+    </div>
+    <div class="half-whidth">
+      <label for="children">
+      <span class="search-field-main-span">Дети</span>
+      </label>
+      <input id="children" type="text" name="children" value="0">
+    </div>
+
       </fieldset>
+        <input type="submit" name="searchbutton" value="Найти">
 
     </form>
 
@@ -92,7 +77,7 @@
 
   <footer class="main-footer">
      <p class="footer-contacts">
-       <b>#VISITSEDONA</b>
+       #VISITSEDONA
      </p>
      <div class="footer-social">
        <ul>
