@@ -56,19 +56,30 @@
         <span class="search-field-main-span">Дата Выезда</span>
         </label>
         <input id="date-out" type="text" name="date-out" value="tomorrow">
+
     <div class="half-whidth">
       <label for="adults">
       <span class="search-field-main-span">Взрослые</span>
       </label>
-      <input id="date-in" type="text" name="adults" value="2">
+      <span class="search-form-plus" style="display: block" aria-label="Добавить">
+        <!-- сюда добавить ::before c background -->
+        </span>
+      <span class="search-form-minus" style="display: block" aria-label="Убрать">
+        </span>
+      <input id="date-in" type="text" name="adults" value="2" max="9" min="0">
     </div>
     <div class="half-whidth">
       <label for="children">
       <span class="search-field-main-span">Дети</span>
       </label>
-      <input id="children" type="text" name="children" value="0">
+      <span class="search-form-plus" style="display: block" aria-label="Добавить">
+        </span>
+      <span class="search-form-minus" style="display: block" aria-label="Убрать">
+      </span>
+      <input id="children" type="text" name="children" value="0" max="9" min="0">
     </div>
       </fieldset>
+
       <button type="submit" name="button">Найти</button>
         <input type="submit" name="searchbutton" value="Найти">
 
