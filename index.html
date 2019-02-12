@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -12,9 +15,11 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и Видео</a></li>
         </ul>
+        <figure class="logo">
           <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="100" height="50" alt="Логотип Седона">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
           </a>
+        </figure>
         <ul class="right-navigation">
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -24,19 +29,18 @@
 
 <main class="main-page">
   <h1 class="visually-hidden">Седона, штат Аризона</h1>
-  <section class="top-section">
 
-    <img src="img/background.jpg" alt="Welcome to the gorgeus ">
-    <img src="img/intro-welcome.svg" alt="SEDONA">
-    <img src="img/polygon.svg" alt="Besause the Grand Canyon - sucks!">
-
+  <section class="sedona-intro">
     <h2 class="visually-hidden">Седона лучше, чем Гранд Каньон</h2>
-    <span>Седона - небольшой городок в Аризоне, заслуживающий большего!<span>
+    <img src="img/intro-welcome.svg" width="460" height="350" alt="Welcome to the gorgeus SEDONA">
+  </section>
+
+  <section class="sedona-features">
+    <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
     <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
   </section>
-  <section class="sedona-features">
-  </section>
-  <section class="search-field">
+
+  <section class="sedona-searchfield">
     <h2>Заинтересовались?</h2>
   <p>
     Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
@@ -44,44 +48,50 @@
   </p>
 
     <form class="hotels-search" action=action="https://echo.htmlacademy.ru" method="post">
-      <span class="search-field-top-name">Поиск гостиницы в Седоне</span>
-    <fieldset class="search-field-main">
+      <a href="#" class="searchfield-top">Поиск гостиницы в Седонe</a>
 
+
+    <fieldset class="search-field-main">
         <label for="date-in">
-        <span class="search-field-main-span">Дата Заезда</span>
+        <span class="searchfield-main-span">Дата Заезда</span>
         </label>
         <input id="date-in" type="text" name="date-in" value="today">
 
         <label for="date-out">
-        <span class="search-field-main-span">Дата Выезда</span>
+        <span class="searchfield-main-span">Дата Выезда</span>
         </label>
         <input id="date-out" type="text" name="date-out" value="tomorrow">
 
     <div class="half-whidth">
       <label for="adults">
-      <span class="search-field-main-span">Взрослые</span>
+      <span class="searchfield-main-span">Взрослые</span>
       </label>
-      <span class="search-form-plus" style="display: block" aria-label="Добавить">
-        <!-- сюда добавить ::before c background -->
-        </span>
-      <span class="search-form-minus" style="display: block" aria-label="Убрать">
-        </span>
-      <input id="date-in" type="text" name="adults" value="2" max="9" min="0">
+      <!-- как мне поступить с лейблом для кнопки? -->
+        <button type="button" name="adults-plus" aria-label="Добавить">
+        <img src="img/minus.svg" alt="Добавить"></button>
+
+        <button type="button" name="adults-minus" aria-label="Убрать">
+        <img src="img/plus.svg" alt="Убрать"></button>
+
+      <input id="adults" type="text" name="adults" value="2" max="9" min="0">
     </div>
     <div class="half-whidth">
       <label for="children">
-      <span class="search-field-main-span">Дети</span>
+      <span class="searchfield-main-span">Дети</span>
       </label>
-      <span class="search-form-plus" style="display: block" aria-label="Добавить">
-        </span>
-      <span class="search-form-minus" style="display: block" aria-label="Убрать">
-      </span>
+      <button type="button" name="adults-plus" aria-label="Добавить">
+      <img src="img/minus.svg" alt="Добавить"></button>
+
+      <button type="button" name="adults-minus" aria-label="Убрать">
+      <img src="img/plus.svg" alt="Убрать"></button>
+
       <input id="children" type="text" name="children" value="0" max="9" min="0">
     </div>
-      </fieldset>
 
-      <button type="submit" name="button">Найти</button>
-        <input type="submit" name="searchbutton" value="Найти">
+      </fieldset>
+        <button class="button search-button" type="submit" name="searchbutton">
+        <span class="title-text">Найти</span>
+        </button>
 
     </form>
 
@@ -94,27 +104,25 @@
        #VISITSEDONA
      </p>
      <div class="footer-social">
-       <ul>
-         <li><a class="social-button" href="#" aria-label="Мы в Твиттер">
-            <img src="img/twitter.svg" alt="Twitter">
+       <ul class="social-list">
+         <li><a class="social-button-twitter" href="#" aria-label="Мы в Твиттер">
+          Твиттер
          </a></li>
-         <li><a class="social-button" href="#" aria-label="Наша страница на Фейсбук">
-           <img src="img/fb-icon.svg" alt="Facebook>
+         <li><a class="social-button-facebook" href="#" aria-label="Наша страница на Фейсбук">
+           Фейсбук
          </a></li>
-         <li><a class="social-button" href="#" aria-label="Наш Ютуб-канал">
-           <img src="img/youtube.svg" alt="YouTube">
-           <!-- Надо оставлять альт-подписи к этим картинкам? -->
-           <!-- почему их не видно на странице? -->
+         <li><a class="social-button-youtube" href="#" aria-label="Наш Ютуб-канал">
+          Ютуб
          </a></li>
        </ul>
      </div>
 
-     <p class="footer-copyright">
+     <div class="footer-copyright">
     <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
       <span>Website by</span>
       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="ЛогоHTMLАкадемия">
     </a>
-     </p>
+  </div>
 
   </footer>
 </body>

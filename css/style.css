@@ -1,0 +1,171 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px #cccccc;
+
+  /* margin-left: 40px;
+  margin-right: 40px; */
+}
+
+body, p,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title-text {
+  font-size: 21px;
+}
+
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+ .left-navigation,
+.right-navigation {
+  list-style: none;
+}
+
+.left-navigation a,
+.right-navigation a {
+  color: rgb(0, 0, 0);
+}
+
+.left-navigation a:hover,
+.right-navigation a:hover,
+.left-navigation a:focus,
+.right-navigation a:focus  {
+  color: #81b3d2;
+}
+
+/* Мейн */
+.main-page {
+  /* background-color: #ffffff; */
+  text-align: center;
+  background-image: url("../img/white back.png");
+}
+
+.sedona-intro {
+  background-image:
+  url("../img/intro-mask.svg"), url("../img/background.jpg");
+  background-position: bottom, center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: auto, 1200px 518px;
+}
+
+.sedona-features h3 {
+  font-size: 21px;
+}
+
+/* поле поиска */
+
+.searchfield-top {
+  display: block;
+  width: 568px;
+  margin-top: 47px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #766357;
+}
+
+.search-button {
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+/* страница поиска отелей */
+
+.hotels-list {
+  list-style: none;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+  list-style: none;
+  color: #ffffff;
+}
+
+.button-brown {
+  background-color: #766357;
+  color: #ffffff;
+}
+
+/* .button-blue a:hover
+.button-blue a:focus {
+  background-color: #669ec0;
+}
+
+.button-blue a:active {
+  background-color: #5496bd;
+}
+
+.button-brown a:hover
+.button-brown a:focus {
+  background-color: #604e43;
+}
+
+.button-brown a:active {
+  background-color: #503e33;
+ }  ничего не работает? */
+
+/* Футер */
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.902);
+}
+
+.social-list  {
+  list-style: none;
+}
+.social-button-twitter {
+  background: #81b3d2, url("../img/twitter.svg"), no-repeat, center;
+}
+
+.social-button-facebook {
+  background: #81b3d2 url("../img/facebook.svg") no-repeat center;
+}
+
+.social-button-youtube {
+  background: #81b3d2 url("../img/youtube.svg") no-repeat center;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+  background-color: #f669ec0;
+}
