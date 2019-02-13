@@ -77,7 +77,7 @@ a {
 .sedona-intro {
   position: relative;
   background-image: url("../img/background.jpg");
-  display: block;
+  width: 1200px; /*  картинка ползет вбок, что с ней делать и что у меня за полоска сбоку?*)     */
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,6 +86,7 @@ a {
 }
 
 .sedona-intro::after {
+  /*я считаю что это гениально */
   content: "";
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
