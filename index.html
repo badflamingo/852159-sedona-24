@@ -3,28 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-
-      <ul class="left-navigation">
+  <figure class="logo">
+    <a class="main-header-logo">
+      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
+    </a>
+  </figure>
+  <div class="list1">
+      <ul class="left-navigation navigation-list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo.html">Фото и Видео</a></li>
       </ul>
-      <figure class="logo">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
-        </a>
-      </figure>
-      <ul class="right-navigation">
+    </div>
+  <div class="list2">
+      <ul class="right-navigation navigation-list">
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
-    </nav>
+  </div>
+  </nav>
   </header>
 
   <main class="main-page">
@@ -36,8 +39,50 @@
     </div>
 
     <section class="sedona-features">
-      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+      <h3 class="headline-small">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
       <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
+
+      <div class="features-list">
+        <div class="features-row">
+          <div class="sedona-definitions">
+            <h3 class="headline-small">
+              Настоящий городок
+            </h3>
+            -№1-
+            <p>
+              Седона - не аттракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+          <figure class="image-definition">
+          <img src="img/real-city.png" width="800" height="256" alt="sedona-shop">
+        </figure>
+        </div>
+
+      <div class="text-row">
+        <div class="row-cell">
+          <h3 class="headline-small"> Жильё </h3>
+          <p>
+            Рекомендуем пожить в настоящем мотеле, все как в кино!
+          </p>
+            <img src="img/house.svg" alt="ЖИЛЬЁ">
+        </div>
+        <div class="row-cell">
+          <h3 class="headline-small"> Еда </h3>
+          <p>
+            Всегда заказывайте фименный бургер, вы не разочаруетесь!
+          </p>
+          <img src="img/burger.svg" alt="ЕДА">
+        </div>
+       <div class="row-cell">
+         <h3 class="headline-small"> Сувениры </h3>
+         <p>
+           Не только китайского, но и местного производства!
+         </p>
+        <img src="img/gift.svg" alt="СУВЕНИРЫ">
+       </div>
+    </div>
+      </div>
+
     </section>
 
     <section class="sedona-searchfield">
@@ -94,8 +139,11 @@
                 </button>
 
               </form>
+              <div class="map">
+              </div>
 
             </section>
+
 
           </main>
 
