@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -29,7 +34,7 @@ a {
   vertical-align: middle;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -98,7 +103,7 @@ a {
 
 .sedona-intro {
   position: relative;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 72px;
@@ -121,11 +126,27 @@ a {
   font-size: 21px;
 }
 
+.features-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .features-row {
   background-color: #81b3d2;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
+.text-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row-cell {
+  padding: 60px;
+}
 
 /* поле поиска */
 
@@ -157,8 +178,14 @@ a {
 /* страница поиска отелей */
 
 .hotels-list {
+  display: flex;
   list-style: none;
+  flex-direction: column;
 }
+
+ .hotel {
+   display: flex;
+ }
 
 .button-blue {
   background-color: #81b3d2;
@@ -205,12 +232,25 @@ a {
 }
 
 .social-list  {
+  margin: 0, auto;
+  padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+justify-content: center;
+}
+
+.social-button {
+  background: #81b3d2 no-repeat center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  position: relative;
 }
 .social-button-twitter {
-  background: #81b3d2 no-repeat center;
+  background-image: url(".../img/t.png");
+  position: relative;
+  background-repeat: no-repeat;
+/* я перебрала кучу вариантов как ее показать? */
 }
 
 .social-button-facebook {
@@ -225,21 +265,3 @@ a {
 .social-button a:focus {
   background-color: #f669ec0;
 }
-
-/* для флексов */
-
- /* мейн */
-.features-list {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.text-row {
-  display: flex;
-  justify-content: space-around;
-}
-
- .row-cell {
-   padding: 60px;
- }

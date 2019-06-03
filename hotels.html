@@ -10,12 +10,14 @@
   <div class="container">
   <header class="main-header">
     <nav class="main-navigation">
-      <a href="index.html" class="header-logo">
+      <a class="header-logo">
       <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона">
       </a>
       <ul class="navigation-list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo.html">Фото и Видео</a></li>
+      </ul>
+      <ul class="navigation-list">
         <li><a href="map.html">Карта штата</a></li>
         <li class="current-menu"><a href="hotels.html">Гостиницы</a></li>
       </ul>
@@ -25,16 +27,79 @@
   <main class="hotels-page">
     <h1 class="visually-hidden">Поиск отелей</h1>
 
+    <section class="filters">
+
+      <form class="" action="#" method="get">
+
+        <div class="infrastructure-filters">
+          <h3>Инфраструктура:</h3>
+          <input type="checkbox" name="pool" id="pool" checked>
+          <label for="pool">
+            Бассейн
+          </label>
+          <input type="checkbox" name="parking" id="parking">
+          <label for="parking">
+            Парковка
+          </label>
+          <input type="checkbox" name="wi-fi" id="wi-fi">
+          <label for="Wi-fi">
+            Wi-fi
+          </label>
+
+        </div>
+
+        <div class="accommodation-filters">
+          <h3>Тип жилья:</h3>
+          <input type="checkbox" name="hotel" id="hotel" checked>
+          <label for="hotel">
+            Гостиница
+          </label>
+          <input type="checkbox" name="motel" id="motel" checked>
+          <label for="motel">
+            Мотель
+          </label>
+          <input type="checkbox" name="apartments" id="apartments" checked>
+          <label for="apartments">
+            Апартаменты
+          </label>
+
+        </div>
+
+        <div class="price-filter">
+          <h3>Стоимость в сутки (P):</h3>
+          <div class="range-filter">
+
+            <label class="min-price">
+              От
+            <input type="text" name="min-price" value="0">
+            </label>
+
+            <label class="max-price">
+            До
+            <input type="text" name="max-price" value="3000">
+            </label>
+            <div class="range">
+              <input type="submit" value="Показать">
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </section>
+    <section class="sorting">
+
+    </section>
+
     <section class="search-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
+
       <ul class="hotels-list">
 
         <li class="hotel">
           <img class="hotel-image" src="img\AmaraResortm.jpg" alt="Amara resort">
           <p>
-            <h3>
-              Amara resort & SPA
-            </h3>
+            <h3>Amara resort & SPA</h3>
             <div class="hotel-info">
               <span class="hotel-class">Гостиница</span>
               <span class="hotel-class">От 4000 Р.</span>
@@ -58,9 +123,7 @@
         <li class="hotel">
           <img class="hotel-image" src="img\DesertQailm.jpg" alt="Desert Quail Inn">
           <p>
-            <h3>
-              Desert Quail Inn
-            </h3>
+            <h3>Desert Quail Inn</h3>
             <div class="hotel-info">
               <span class="hotel-class">Мотель</span>
               <span class="hotel-class">От 3000 Р.</span>
@@ -83,9 +146,7 @@
         <li class="hotel">
           <img class="hotel-image" src="img\VillasAtPocom.jpg" alt="Villas At Poco Diablo">
           <p>
-            <h3>
-              Villas At Poco Diablo
-            </h3>
+            <h3>Villas At Poco Diablo</h3>
             <div class="hotel-info">
               <span class="hotel-class">Апартаменты</span>
               <span class="hotel-class">От 2000 Р.</span>
@@ -114,13 +175,13 @@
     <div class="footer-social">
       <ul class="social-list">
         <li><a class="social-button-twitter" href="#" aria-label="Мы в Твиттер">
-          Твиттер
+          <img src="img/twitter.svg" alt="twitter">
         </a></li>
         <li><a class="social-button-facebook" href="#" aria-label="Наша страница на Фейсбук">
-          Фейсбук
+          <img src="img/facebook.svg" alt="facebook">
         </a></li>
         <li><a class="social-button-youtube" href="#" aria-label="Наш Ютуб-канал">
-          Ютуб
+          <img src="img/youtube.svg" alt="youtube">
         </a></li>
       </ul>
     </div>
@@ -131,9 +192,9 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="ЛогоHTMLАкадемия">
       </a>
     </div>
+
   </footer>
 
 </div>
 </body>
 </html>
-<!-- подровняла код -->
