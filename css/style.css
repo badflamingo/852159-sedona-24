@@ -103,7 +103,11 @@ img {
 
 .sedona-intro {
   position: relative;
+<<<<<<< HEAD
   background-image: url("../img/background-img.jpg");
+=======
+  background-image: url("../img/background.jpg");
+>>>>>>> 522dd747b35dde4e04a444fe80bb099afeb35a16
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 72px;
@@ -137,6 +141,7 @@ img {
   color: white;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 }
 
 .text-row {
@@ -144,6 +149,15 @@ img {
   justify-content: space-around;
 }
 
+=======
+}
+
+.text-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+>>>>>>> 522dd747b35dde4e04a444fe80bb099afeb35a16
 .row-cell {
   padding: 60px;
 }
@@ -265,3 +279,4 @@ justify-content: center;
 .social-button a:focus {
   background-color: #f669ec0;
 }
+/* ыть */
